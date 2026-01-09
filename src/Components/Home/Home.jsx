@@ -32,11 +32,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
+      <div className="flex gap-4">
       {category.map((data,index)=>{
         return(
-          <div key={index}>
+          <div key={index}> 
            <h1>{data.categoryName}</h1>
+           <img src={data.categoryImage} alt="" className="w-[20vw]"/>
           </div>
         )
       })}
